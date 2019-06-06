@@ -14,6 +14,7 @@ class EmailParser
   
   def parse 
     @emailstring.split(/[\s,]/).reject{|c| c.empty?}.uniq
+    #splits the string at commas and whitespace, rejecting empty array elements, and only returning unique array elements
   end
   
 end
